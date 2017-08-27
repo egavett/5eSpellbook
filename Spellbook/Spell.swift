@@ -22,5 +22,7 @@ class Spell: NSObject {
     
     var spellDescription:String? // Text description of the spell's effect
     
+    var diceRoll:[DiceRoll]? // List of dice rolls
     
+    var upcastScale:(Int,Int)? // The number of dice added per addicional spell-slot level
 }
