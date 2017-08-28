@@ -25,4 +25,5 @@ class Spell: NSObject {
     var diceRoll:[DiceRoll]? // List of dice rolls
     
     var upcastScale:(Int,Int)? // The number of dice added per addicional spell-slot level
+    
 }
