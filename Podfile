@@ -8,6 +8,7 @@ target 'Spellbook' do
   # Pods for Spellbook
   pod 'SQLite.swift'
   pod 'PureLayout'
+  pod 'RealmSwift'
 
   target 'SpellbookTests' do
     inherit! :search_paths
