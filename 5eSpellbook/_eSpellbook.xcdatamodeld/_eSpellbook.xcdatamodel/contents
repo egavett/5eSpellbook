@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="School" representedClassName="School" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="schoolName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Source" representedClassName="Source" syncable="YES" codeGenerationType="class">
+        <attribute name="abbreviation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Spell" representedClassName="Spell" syncable="YES" codeGenerationType="class">
+        <attribute name="components" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isConcentration" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isRitual" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="range" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="spellDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="castingTIme" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Time" syncable="YES"/>
+        <relationship name="school" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="School" syncable="YES"/>
+        <relationship name="sourceBook" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Source" syncable="YES"/>
+    </entity>
+    <entity name="Time" representedClassName="Time" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="timeDescription" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="School" positionX="-47" positionY="-57" width="128" height="73"/>
+        <element name="Time" positionX="-236" positionY="-57" width="128" height="73"/>
+        <element name="Source" positionX="135" positionY="-54" width="128" height="88"/>
+        <element name="Spell" positionX="-38" positionY="-394" width="128" height="223"/>
+    </elements>
+</model>
